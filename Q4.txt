@@ -1,0 +1,80 @@
+package assignments;
+import java.util.*;
+public class Question4 {
+
+			public static void main(String[] args) {
+			Scanner sc = new Scanner(System.in);
+			CountEvenOdd count =new CountEvenOdd();
+			
+			System.out.println("Enetr the size of an array:");
+			int size =  sc.nextInt();
+			
+			int num[]=new int [size];
+			
+			//input
+			System.out.println("Enter the elements in array: ");
+			for(int i=0;i<size;i++)
+			{
+				num[i]=sc.nextInt();
+			}
+			
+			//out put
+			System.out.println("Array elements are:");
+			for(int i=0;i<size;i++)
+			{
+				System.out.println(num[i]);
+			}
+			System.out.println("*****************");
+			count.countEvenOddNum(num);
+	
+		}
+	
+}
+
+/*save program by CountEvenOdd.java
+  
+ package assignments;
+
+public class CountEvenOdd {
+			public static void countEvenOddNum(int num[]){
+					int evenCount=0;
+					int oddCount=0;
+					for(int i=0;i<num.length;i++){
+						if(num[i]%2==0){
+							evenCount++;
+						}
+						else{
+							oddCount++;
+						}
+					}
+				//	System.out.println("*****************");
+					System.out.println("Number of Even number are: \t"+evenCount);
+					System.out.println("Number of Odd number are: \t"+oddCount);
+			}
+}
+ 
+ */
+/*out put
+  Enetr the size of an array:
+7
+Enter the elements in array: 
+435
+34
+2
+4
+567
+798
+6756
+Array elements are:
+435
+34
+2
+4
+567
+798
+6756
+*****************
+Number of Even number are: 	5
+Number of Odd number are: 	2
+
+  */

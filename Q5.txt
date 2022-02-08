@@ -1,0 +1,79 @@
+package assignments;
+import java.util.*;
+public class Question5 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter the size of an array:");
+		int size=sc.nextInt();
+		
+		int arr1[] = new int[size];
+		int arr2[] = new int[size];
+		int arr3[] = new int[size];
+		//input for First array
+		System.out.println("Enter the elements for first array:");
+		for(int i=0;i<size;i++){
+			arr1[i]=sc.nextInt();
+		}
+		
+		//out for  First array
+		System.out.println("First array elements are:");
+		for(int i=0;i<size;i++){
+			System.out.println(arr1[i]);
+		}
+		
+		System.out.println();
+		
+		//input for Second array
+		System.out.println("Enter the elements for second array:");
+		for(int i=0;i<size;i++){
+			arr2[i]=sc.nextInt();
+		}
+		
+		//out for second array
+		System.out.println("Second array elements are:");
+		for(int i=0;i<size;i++){
+			System.out.println(arr2[i]);
+		}
+		
+		//Addition of an array
+		for(int i=0;i<size;i++){
+			arr3[i]=arr1[i]+arr2[i];
+			System.out.println("Sum of two array elements are:  "+arr1[i]+" + "+arr2[i]+ " = "+arr3[i] );
+		}
+
+	}
+
+}
+
+/*out put
+ Enter the size of an array:
+4
+Enter the elements for first array:
+23
+45
+12
+34
+First array elements are:
+23
+45
+12
+34
+
+Enter the elements for second array:
+4445
+234
+45
+23
+Second array elements are:
+4445
+234
+45
+23
+Sum of two array elements are:  23 + 4445 = 4468
+Sum of two array elements are:  45 + 234 = 279
+Sum of two array elements are:  12 + 45 = 57
+Sum of two array elements are:  34 + 23 = 57
+ 
+ */

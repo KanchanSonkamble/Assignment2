@@ -1,0 +1,68 @@
+package assignments;
+import java.util.*;
+public class Question3 {
+
+	public static void main(String[] args) {
+	
+		Scanner  sc =  new Scanner(System.in);
+		
+		System.out.println("Enter the size of an array:");
+		int size=sc.nextInt();
+		
+		int num[]=new int[size];
+		
+		//input
+		System.out.println("Enter the Element");
+		for(int i=0;i<size;i++)
+		{		
+			num[i]=sc.nextInt();
+		}
+		
+		//out put
+		System.out.println("Array elements are:");
+		for(int i=0;i<size;i++)
+		{
+			System.out.println(num[i]);
+		}	
+		
+		//reverse check
+		for(int i=0, j=num.length-1;j>=0;j--,i++)
+		{
+			if(num[i]==num[j])
+			{
+				System.out.println("Array elements  are same");
+			}
+			else{						
+				System.out.println("array elements are not same");
+				}
+		}			
+			
+	}
+
+}
+/* out put
+  
+ Enter the size of an array:
+6
+Enter the Element
+2
+3
+15
+15
+3
+2
+Array elements are:
+2
+3
+15
+15
+3
+2
+Array elementys  are same
+Array elementys  are same
+Array elementys  are same
+Array elementys  are same
+Array elementys  are same
+Array elementys  are same
+ 
+*/

@@ -1,0 +1,147 @@
+package assignments;
+import java.util.*;
+public class Question1 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		PositiveNegative pn=new PositiveNegative();
+		CountEvenOdd oe=new CountEvenOdd();
+		
+		System.out.println("Enter the size of an array:");
+		int size=sc.nextInt();
+		
+		int num[]=new int [size];
+		
+		//input
+		System.out.println("Enter the number:");
+		for(int i=0;i<size;i++){
+			num[i]=sc.nextInt();
+		}
+		
+		//out put
+		System.out.println("Array numbers are:");
+		for(int i=0;i<size;i++){
+			System.out.println(num[i]);
+		}
+		System.out.println("***************************");
+		pn.countPositiveNegative(num);
+		//System.out.println("***************************");
+		oe.countEvenOddNum(num);
+
+	}
+
+}
+/*save program by name PositiveNegative.java
+  
+package assignments;
+
+public class PositiveNegative {
+		public static void countPositiveNegative(int num[]){
+			int positiveNum=0;
+			int negativeNum=0;
+			int zero=0;
+			for(int i=0;i<num.length;i++){
+				if(num[i]>0){
+				//	System.out.println(num[i]+" is  Positive");
+					positiveNum++;
+				}
+				else
+					if(num[i]<0){
+					//	System.out.println(num[i]+" is  Negative");
+						negativeNum++;
+					}
+					else{
+						//System.out.println(num[i]+" is  Zero");
+						zero++;
+					}
+			}
+		//	System.out.println("***************************");
+			System.out.println("Number of Positive Numbers are: "+positiveNum);
+			System.out.println("Number of Negative Numbers are: "+negativeNum);
+			System.out.println("Zero's  are: \t\t\t"+zero);
+		}
+}
+ 
+ */
+
+/*Save program by name CountEvenOdd.java
+  
+ package assignments;
+
+public class CountEvenOdd {
+			public static void countEvenOddNum(int num[]){
+					int evenCount=0;
+					int oddCount=0;
+					for(int i=0;i<num.length;i++){
+						if(num[i]%2==0){
+						//	System.out.println(num[i]+"  is  Even");
+							evenCount++;
+						}
+						else{
+							//System.out.println(num[i]+"  is  Odd");
+							oddCount++;
+						}
+					}
+				//	System.out.println("*****************");
+					System.out.println("Number of Even number are: \t"+evenCount);
+					System.out.println("Number of Odd number are: \t"+oddCount);
+			}
+}
+
+ */
+
+/* out put 
+ 
+ Enter the size of an array:
+20
+Enter the number:
+-34
+45
+0
+0
+0
+-34
+45
+234
+-23
+56
+0
+45
+-56
+34
+2
+6
+0
+56
+0
+-45
+Array numbers are:
+-34
+45
+0
+0
+0
+-34
+45
+234
+-23
+56
+0
+45
+-56
+34
+2
+6
+0
+56
+0
+-45
+***************************
+Number of Positive Numbers are:     9
+Number of Negative Numbers are: 5
+Zero's  are: 													6
+Number of Even number are: 				15
+Number of Odd number are: 				5
+
+ 
+ */
